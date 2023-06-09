@@ -15,6 +15,15 @@
     echo "Hello {$firstName}!<br>";
     echo "Vous avez {$age} ans.";
 
+    $vegetables = ["tomate", "concombre", "aubergine"];
+    echo "<pre>";
+    print_r($vegetables);
+
+    //unset($vegetables[1]);
+    array_splice($vegetables, 1, 1);
+
+    print_r($vegetables);
+    echo "</pre>";
     ?>
 </body>
 
